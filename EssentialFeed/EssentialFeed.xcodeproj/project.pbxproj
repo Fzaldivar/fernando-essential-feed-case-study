@@ -15,6 +15,7 @@
 		7B495DEE2AD3BDB4006EEE28 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B495DED2AD3BDB4006EEE28 /* FeedLoader.swift */; };
 		7BCC63872AD4D50D00DDFE2D /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC63862AD4D50D00DDFE2D /* RemoteFeedLoader.swift */; };
 		7BCC63892AD9F7A800DDFE2D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC63882AD9F7A800DDFE2D /* HTTPClient.swift */; };
+		7BCC638B2AD9F82C00DDFE2D /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC638A2AD9F82C00DDFE2D /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		7B495DED2AD3BDB4006EEE28 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		7BCC63862AD4D50D00DDFE2D /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		7BCC63882AD9F7A800DDFE2D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7BCC638A2AD9F82C00DDFE2D /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				7BCC63862AD4D50D00DDFE2D /* RemoteFeedLoader.swift */,
 				7BCC63882AD9F7A800DDFE2D /* HTTPClient.swift */,
+				7BCC638A2AD9F82C00DDFE2D /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				7BCC63872AD4D50D00DDFE2D /* RemoteFeedLoader.swift in Sources */,
 				7BCC63892AD9F7A800DDFE2D /* HTTPClient.swift in Sources */,
 				7B495DEE2AD3BDB4006EEE28 /* FeedLoader.swift in Sources */,
+				7BCC638B2AD9F82C00DDFE2D /* FeedItemsMapper.swift in Sources */,
 				7B495DEC2AD3BC83006EEE28 /* FeedItem.swift in Sources */,
 				7B495DD62AD3BC12006EEE28 /* EssentialFeed.docc in Sources */,
 			);
