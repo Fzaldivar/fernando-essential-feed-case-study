@@ -40,6 +40,16 @@
                reference = "container:../EssentialFeedAPIEndToEndTests.xctestplan">
             </TestPlanReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <TestPlanReference
+               reference = "container:../CI.xctestplan">
+            </TestPlanReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
