@@ -13,5 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_15.app
+    
     - name: Build and test
-        run: xcodebuild clean build test -project EssentialFeed/EssentialFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        run: xcodebuild clean build test -project EssentialFeed/EssentialFeed.xcodeproj -scheme "CI" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 15" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
