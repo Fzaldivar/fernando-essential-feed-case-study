@@ -19,8 +19,6 @@ public final class CoreDataFeedStore: FeedStore {
     public func retrieve(completion: @escaping RetrievalCompletion) {
         perform { context in
             do {
-                let request = NSFetchRequest<ManagedCache>(entityName: ManagedCache.entity().name!)
-                request.returnsObjectsAsFaults = false
                 if let cache = try ManagedCache.find(in: context) {
                     completion(.found(feed: cache.localFeed, timestamp: cache.timestamp))
                 } else {
@@ -51,7 +49,7 @@ public final class CoreDataFeedStore: FeedStore {
     public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
         perform { context in
             do {
-                try ManagedCache.find(in: context).map(context.delete(_:)).map(context.save)
+                try ManagedCache.find(in: context).map(context.delete).map(context.save)
                 completion(nil)
             } catch {
                 completion(error)
