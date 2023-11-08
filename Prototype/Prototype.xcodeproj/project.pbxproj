@@ -13,6 +13,7 @@
 		7BCD036B2AFC467400F9525A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD03692AFC467400F9525A /* LaunchScreen.storyboard */; };
 		7BCD03732AFC553100F9525A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD03722AFC553100F9525A /* FeedViewController.swift */; };
 		7BCD03752AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD03742AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift */; };
+		7BCD03772AFC577100F9525A /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD03762AFC577100F9525A /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7BCD036C2AFC467400F9525A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BCD03722AFC553100F9525A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7BCD03742AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		7BCD03762AFC577100F9525A /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,6 @@
 		7BCD03522AFC467200F9525A = {
 			isa = PBXGroup;
 			children = (
-				7BCD03742AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift */,
 				7BCD035D2AFC467200F9525A /* Prototype */,
 				7BCD035C2AFC467200F9525A /* Products */,
 			);
@@ -63,6 +64,8 @@
 				7BCD03692AFC467400F9525A /* LaunchScreen.storyboard */,
 				7BCD036C2AFC467400F9525A /* Info.plist */,
 				7BCD03722AFC553100F9525A /* FeedViewController.swift */,
+				7BCD03742AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift */,
+				7BCD03762AFC577100F9525A /* FeedImageCell.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCD03752AFC56EF00F9525A /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				7BCD03772AFC577100F9525A /* FeedImageCell.swift in Sources */,
 				7BCD03732AFC553100F9525A /* FeedViewController.swift in Sources */,
 				7BCD035F2AFC467200F9525A /* AppDelegate.swift in Sources */,
 			);
