@@ -26,7 +26,6 @@ final class EssentialFeedCacheIntegrationTests: XCTestCase {
     }
     
     func test_load_deliversItemsSavedOnASeparateInstance() {
-        let sutToPerformSave = makeSUT()
         let sutToPerformLoad = makeSUT()
         let feed = uniqueImageFeed().models
         
