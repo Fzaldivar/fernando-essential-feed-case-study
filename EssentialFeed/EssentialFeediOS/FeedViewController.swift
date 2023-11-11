@@ -1,0 +1,46 @@
+//
+//  FeedViewController.swift
+//  EssentialFeediOS
+//
+//  Created by Fernando Zaldivar on 11/11/23.
+//
+
+import UIKit
+import EssentialFeed
+
+final public class FeedViewController: UITableViewController {
+    private var loader: FeedLoader?
+    private var onViewIsAppearing: ((FeedViewController) -> Void)?
+    
+    public convenience init(loader: FeedLoader) {
+        self.init()
+        self.loader = loader
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(load), for: .valueChanged)
+        
+        onViewIsAppearing = { vc in
+            vc.onViewIsAppearing = nil
+            vc.refreshControl?.beginRefreshing()
+        }
+        
+        load()
+    }
+    
+    public override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        
+        onViewIsAppearing?(self)
+    }
+    
+    @objc private func load() {
+        refreshControl?.beginRefreshing()
+        loader?.load { [weak self] _ in
+            self?.refreshControl?.endRefreshing()
+        }
+    }
+}
