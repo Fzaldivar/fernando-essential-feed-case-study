@@ -5,7 +5,7 @@
 //  Created by Fernando Zaldivar on 26/11/23.
 //
 //
-//import EssentialFeed
+import EssentialFeed
 //
 //final class FeedViewModel {
 //    typealias Observer<T> = (T) -> Void
@@ -31,3 +31,7 @@
 //        }
 //    }
 //}
+
+struct FeedViewModel {
+    let feed: [FeedImage]
+}
