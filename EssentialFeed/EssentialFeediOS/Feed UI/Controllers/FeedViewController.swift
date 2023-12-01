@@ -30,7 +30,6 @@ public final class FeedViewController: UITableViewController,  UITableViewDataSo
             vc.refreshControl?.beginRefreshing()
         }
         
-        tableView.prefetchDataSource = self
         refresh()
     }
     
