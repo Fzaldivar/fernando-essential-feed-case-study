@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B1A32F42B0019EA009D619D /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A32F32B0019EA009D619D /* FeedViewControllerTests.swift */; };
+		7B1A32F42B0019EA009D619D /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A32F32B0019EA009D619D /* FeedUIIntegrationTests.swift */; };
 		7B1A32F62B001C49009D619D /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B495DD12AD3BC12006EEE28 /* EssentialFeed.framework */; platformFilter = ios; };
 		7B1A32F72B001C49009D619D /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B495DD12AD3BC12006EEE28 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B1A32FC2B001D31009D619D /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7B44F2AE243FA00019458 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -137,7 +137,7 @@
 
 /* Begin PBXFileReference section */
 		7B1A32F22AFEA6FA009D619D /* EssentialFeediOSTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOSTest.xctestplan; sourceTree = "<group>"; };
-		7B1A32F32B0019EA009D619D /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
+		7B1A32F32B0019EA009D619D /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		7B1A32FD2B002C15009D619D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7B307B392AD4C0B800D27BA7 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		7B495DD12AD3BC12006EEE28 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,7 +413,7 @@
 		7BCD03882AFEA3EE00F9525A /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BE924CB2B123ACD0093B9DE /* Controllers */,
+				7BE924CB2B123ACD0093B9DE /* FeedUI */,
 				7BE924C02B12397E0093B9DE /* Helpers */,
 			);
 			path = EssentialFeediOSTests;
@@ -460,6 +460,9 @@
 		7BE924C02B12397E0093B9DE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7BE924CC2B123B110093B9DE /* FeedViewController+TestHelper.swift */,
+				7BE924CE2B123B950093B9DE /* FeedImageCell+TestHelpers.swift */,
+				7BE924D22B123C340093B9DE /* FeedViewControllerTests+Assertions.swift */,
 				7BE924C12B12399F0093B9DE /* UIImage+TestHelpers.swift */,
 				7BE924C32B1239DD0093B9DE /* UIRefreshControl+TestHelpers.swift */,
 				7BE924C52B123A100093B9DE /* UIButton+TestHelpers.swift */,
@@ -492,15 +495,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7BE924CB2B123ACD0093B9DE /* Controllers */ = {
+		7BE924CB2B123ACD0093B9DE /* FeedUI */ = {
 			isa = PBXGroup;
 			children = (
-				7B1A32F32B0019EA009D619D /* FeedViewControllerTests.swift */,
-				7BE924CC2B123B110093B9DE /* FeedViewController+TestHelper.swift */,
-				7BE924CE2B123B950093B9DE /* FeedImageCell+TestHelpers.swift */,
-				7BE924D22B123C340093B9DE /* FeedViewControllerTests+Assertions.swift */,
+				7B1A32F32B0019EA009D619D /* FeedUIIntegrationTests.swift */,
 			);
-			path = Controllers;
+			path = FeedUI;
 			sourceTree = "<group>";
 		};
 		7BE924D42B123CCC0093B9DE /* Feed UI */ = {
@@ -850,7 +850,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1A32F42B0019EA009D619D /* FeedViewControllerTests.swift in Sources */,
+				7B1A32F42B0019EA009D619D /* FeedUIIntegrationTests.swift in Sources */,
 				7BE924D32B123C340093B9DE /* FeedViewControllerTests+Assertions.swift in Sources */,
 				7BE924C62B123A100093B9DE /* UIButton+TestHelpers.swift in Sources */,
 				7BE924C42B1239DD0093B9DE /* UIRefreshControl+TestHelpers.swift in Sources */,
