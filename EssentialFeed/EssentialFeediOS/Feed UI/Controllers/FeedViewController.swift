@@ -16,11 +16,10 @@ public final class ErrorView: UIView {
 }
 
 public final class FeedViewController: UITableViewController,  UITableViewDataSourcePrefetching, FeedLoadingView, FeedErrorView {
-    
+    @IBOutlet private(set) public var errorView: ErrorView?
     private var imageLoader: FeedImageDataLoader?
     private var onViewIsAppearing: ((FeedViewController) -> Void)?
     var delegate: FeedViewControllerDelegate?
-    public let errorView = ErrorView()
     var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
     }
@@ -50,7 +49,7 @@ public final class FeedViewController: UITableViewController,  UITableViewDataSo
     }
     
     func display(_ viewModel: FeedErrorViewModel) {
-        errorView.message = viewModel.message
+        errorView?.message = viewModel.message
     }
     
     public override func viewIsAppearing(_ animated: Bool) {
