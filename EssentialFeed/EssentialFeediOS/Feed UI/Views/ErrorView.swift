@@ -1,0 +1,12 @@
+//
+//  ErrorView.swift
+//  EssentialFeediOS
+//
+//  Created by Fernando Zaldivar on 6/12/23.
+//
+
+import UIKit
+
+public final class ErrorView: UIView {
+    public var message: String?
+}
