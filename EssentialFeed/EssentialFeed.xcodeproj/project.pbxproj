@@ -1513,7 +1513,7 @@
 				7BAE06AB2B290C6B005F04C1 /* FeedStore2.xcdatamodel */,
 				7B495EDD2AF31A1F001A71BF /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = 7B495EDD2AF31A1F001A71BF /* FeedStore.xcdatamodel */;
+			currentVersion = 7BAE06AB2B290C6B005F04C1 /* FeedStore2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
