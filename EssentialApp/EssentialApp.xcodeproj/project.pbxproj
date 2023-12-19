@@ -157,8 +157,8 @@
 				7B3825A62B30DDFA0060FBB6 /* FeedLoaderWithFallbackCompositeTests.swift */,
 				7B3825AC2B30E4930060FBB6 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				7BDF489D2B31FEBB00D273A3 /* FeedLoaderCacheDecoratorTests.swift */,
-				7B3825A52B30DDFA0060FBB6 /* EssentialAppTests-Bridging-Header.h */,
 				7B51AB3C2B321E9C00E82E55 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
+				7B3825A52B30DDFA0060FBB6 /* EssentialAppTests-Bridging-Header.h */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
