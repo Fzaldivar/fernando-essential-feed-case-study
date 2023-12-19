@@ -69,14 +69,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:EssentialFeed.xctestplan">
-         </TestPlanReference>
-         <TestPlanReference
             reference = "container:../EssentialFeedAPIEndToEndTests.xctestplan">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../CI.xctestplan"
-            default = "YES">
          </TestPlanReference>
          <TestPlanReference
             reference = "container:EssentialFeedCacheIntegrationTests.xctestplan">
@@ -85,13 +78,8 @@
             reference = "container:EssentialFeediOSTest.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:../EssentialApp.xctestplan">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:EssentialFeedApp.xctestplan">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:EssentialAppTests.xctestplan">
+            reference = "container:EssentialAppTests.xctestplan"
+            default = "YES">
          </TestPlanReference>
       </TestPlans>
    </TestAction>
