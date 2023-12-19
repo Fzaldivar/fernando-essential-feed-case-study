@@ -14,12 +14,4 @@ extension XCTestCase {
             XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leak.", file: file, line: line)
         }
     }
-    
-    func anyURL() -> URL {
-        return URL(string: "http://a-url.com")!
-    }
-    
-    func anyNSError() -> NSError {
-        return NSError(domain: "any error", code: 0)
-    }
 }
