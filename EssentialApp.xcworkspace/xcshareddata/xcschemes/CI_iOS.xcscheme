@@ -81,6 +81,9 @@
             reference = "container:EssentialAppTests.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:EssentialAppUIAcceptance.xctestplan">
+         </TestPlanReference>
       </TestPlans>
    </TestAction>
    <LaunchAction
