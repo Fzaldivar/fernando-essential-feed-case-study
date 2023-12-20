@@ -4,7 +4,7 @@
       "id" : "484566C0-D6E3-4E6D-8F52-EAA2A42A9126",
       "name" : "Configuration 1",
       "options" : {
-
+        "testExecutionOrdering" : "random"
       }
     }
   ],
