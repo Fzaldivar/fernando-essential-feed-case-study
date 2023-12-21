@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B069B782B3392BA00F4342C /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B069B772B3392BA00F4342C /* DebuggingSceneDelegate.swift */; };
 		7B069B7A2B349F5500F4342C /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B069B792B349F5500F4342C /* SceneDelegateTests.swift */; };
 		7B069B812B34A19500F4342C /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B069B7E2B34A19500F4342C /* FeedViewAdapter.swift */; };
 		7B069B822B34A19500F4342C /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B069B7B2B34A19400F4342C /* FeedUIComposer.swift */; };
@@ -85,7 +84,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B069B772B3392BA00F4342C /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		7B069B792B349F5500F4342C /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		7B069B7B2B34A19400F4342C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		7B069B7C2B34A19400F4342C /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			children = (
 				7BAE06BD2B2BACC5005F04C1 /* AppDelegate.swift */,
 				7BAE06BF2B2BACC5005F04C1 /* SceneDelegate.swift */,
-				7B069B772B3392BA00F4342C /* DebuggingSceneDelegate.swift */,
 				7BAE06C12B2BACC5005F04C1 /* ViewController.swift */,
 				7BAE06C32B2BACC5005F04C1 /* Main.storyboard */,
 				7BAE06C62B2BACC7005F04C1 /* Assets.xcassets */,
@@ -399,7 +396,6 @@
 				7B3825A92B30E3B50060FBB6 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				7B069B842B34A19500F4342C /* MainQueueDispatchDecorator.swift in Sources */,
 				7B51AB3B2B32151400E82E55 /* FeedLoaderCacheDecorator.swift in Sources */,
-				7B069B782B3392BA00F4342C /* DebuggingSceneDelegate.swift in Sources */,
 				7BAE06C02B2BACC5005F04C1 /* SceneDelegate.swift in Sources */,
 				7B3825AB2B30E45A0060FBB6 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				7B069B812B34A19500F4342C /* FeedViewAdapter.swift in Sources */,
