@@ -13,6 +13,11 @@ import Combine
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
+    private lazy var remoteFeedLoader = {
+        let url = URL(string: "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5db4155a4fbade21d17ecd28/1572083034355/essential_app_feed.json")!
+        return RemoteFeedLoader(url: url, client: httpClient)
+    }()
+
     
     private lazy var httpClient: HTTPClient = {
         URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
@@ -35,13 +40,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(windowScene: scene)
         configureWindow()
     }
     
     func configureWindow() {
         let remoteImageLoader = RemoteFeedImageDataLoader(client: httpClient)
-        
-        let localFeedLoader = LocalFeedLoader(store: store, currentDate: Date.init)
         let localImageLoader = LocalFeedImageDataLoader(store: store)
         
         window?.rootViewController = UINavigationController(
@@ -52,6 +58,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     fallback: FeedImageDataLoaderCacheDecorator(
                         decoratee: remoteImageLoader,
                         cache: localImageLoader))))
+        
+        window?.makeKeyAndVisible()
     }
     
     func sceneWillResignActive(_ scene: UIScene) {
@@ -59,10 +67,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func makeRemoteFeedLoaderWithLocalFallback() -> FeedLoader.Publisher {
-        let remoteURL = URL(string: "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5db4155a4fbade21d17ecd28/1572083034355/essential_app_feed.json")!
-        
-        let remoteFeedLoader = RemoteFeedLoader(url: remoteURL, client: httpClient)
-        
         return remoteFeedLoader
             .loadPublisher()
             .caching(to: localFeedLoader)
