@@ -15,20 +15,20 @@ public protocol FeedViewControllerDelegate {
 public final class FeedViewController: UITableViewController,  UITableViewDataSourcePrefetching, FeedLoadingView, FeedErrorView {
     @IBOutlet private(set) public var errorView: ErrorView?
     private var imageLoader: FeedImageDataLoader?
-    private var onViewIsAppearing: ((FeedViewController) -> Void)?
     public var delegate: FeedViewControllerDelegate?
     private var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
     }
     private var cellControllers = [IndexPath: FeedImageCellController]()
     private var loadingControllers = [IndexPath: FeedImageCellController]()
+    private var onViewIsAppearing: ((FeedViewController) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
         onViewIsAppearing = { vc in
             vc.onViewIsAppearing = nil
-            vc.refreshControl?.beginRefreshing()
+            vc.refresh()
         }
         
         refresh()
