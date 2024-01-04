@@ -30,6 +30,8 @@ public final class FeedViewController: UITableViewController,  UITableViewDataSo
             vc.onViewIsAppearing = nil
             vc.refresh()
         }
+        
+        refresh()
     }
     
     public override func viewDidLayoutSubviews() {
